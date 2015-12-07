@@ -1,8 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+var React = require('react'),
+    ReactDOM = require('react-dom'),
+    AutoComplete = require('./autocomplete');
 
 
+var names = ["Claire", "Dustin", "Jeff", "Jed", "Jefferson"];
 
 document.addEventListener("DOMContentLoaded", function () {
-  ReactDOM.render(<MyComponent />, document.getElementById('main'));
+  ReactDOM.render(<AutoComplete names={ names }/>, document.getElementById('root'));
 });
